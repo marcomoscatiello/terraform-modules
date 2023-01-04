@@ -25,12 +25,4 @@ data "aws_iam_policy_document" "lambda" {
       "arn:aws:logs:*:*:*"
     ]
   }
-  # statement {
-  #   actions = [
-  #     "sns:Publish"
-  #   ]
-  #   resources = [
-  #     "arn:aws:sns:${var.region}:${var.account_id}:tda-devops-alerts"
-  #   ]
-  # }
 }

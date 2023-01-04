@@ -11,13 +11,12 @@ variable "region" {
 variable "sns_topic" {
   type        = string
   description = "The SNS Topic to notify in case of lambda errors"
-  default     = "tda-devops-alerts"
+  default     = "devops-alerts"
 }
 
 variable "prefix" {
   type        = string
-  description = "Resources prefix for proper naming (e.g. tui-tda)"
-  default     = "tui-tda"
+  description = "Resources prefix for proper naming"
 }
 
 variable "tags" {
